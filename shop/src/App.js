@@ -24,7 +24,8 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link onClick={ () => {navigate('/')}}>Home</Nav.Link>
             <Nav.Link onClick={ () => {navigate('/detail/0')}}>Features</Nav.Link>
-            <Nav.Link onClick={ () => {navigate(-1)}}>뒤로가기기</Nav.Link>
+            <Nav.Link onClick={ () => {navigate(-1)}}>뒤로가기</Nav.Link>
+            <Nav.Link onClick={ () => {navigate('/cart')}}>장바구니</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -131,7 +132,6 @@ function Card(props) {
       <img src={"https://codingapple1.github.io/shop/shoes" + (props.i + 1) + ".jpg"} width="80%" />             
       <h4>{props.shoes.title}</h4>
       <p>{props.shoes.price}</p>
-      
     </div>
   )
 }

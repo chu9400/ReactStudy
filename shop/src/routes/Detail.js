@@ -2,6 +2,8 @@ import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import {useEffect, useState} from 'react'
 import {Nav} from 'react-bootstrap'
+import { useSelector, useDispatch } from 'react-redux'
+import {addText} from './../store.js'
 
 let Box = styled.div`
   background : ${props => props.bg};
@@ -12,6 +14,8 @@ let Box = styled.div`
 `;
 
 function Detail(props) {
+  let state = useSelector((state)=>{return state})
+  let dispatch = useDispatch();
 
     let {id} = useParams();
     let 찾은 = props.shoes.find((x)=>{
@@ -67,8 +71,9 @@ function Detail(props) {
                   
                   <p>{찾은.content}</p>
                   <p>{찾은.price}원</p>
+                  
                   <button className="btn btn-danger" onClick={()=>{
-                    
+                    dispatch(addText({id:찾은.id, name:찾은.title, count:1}))
                   }}>
                     주문하기
                   </button> 

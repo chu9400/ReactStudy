@@ -13,16 +13,17 @@ let stock = createSlice({
     reducers:{
         changeNum(state, actions){
             let 번호 = state.findIndex((a)=>{ return a.id == actions.payload})
-            console.log(state);
-            console.log(actions);
-            console.log(번호);
             state[번호].count++
+        },
+        addText(state, actions) {
+            state.push(actions.payload)
+            console.log(actions.payload);
         }
 
     }
 })
 
-export let {changeNum} = stock.actions
+export let {changeNum, addText} = stock.actions
 
 
 export default configureStore({
