@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react'
 import { Table } from 'react-bootstrap'
 import { useSelector, useDispatch } from 'react-redux'
-import {changeName, increase} from './../store/useSlice.js'
 import {changeNum} from './../store.js'
+import {changeName, increase, increase01} from './../store/useSlice.js'
 
 function Cart() {
     let state = useSelector((state)=>{return state})
@@ -13,10 +13,11 @@ function Cart() {
             <h4>{state.user.name}의 장바구니</h4>
             <h4>{state.user.age}번 누름</h4>
             <button onClick={()=>{
-                dispatch(increase())
+                dispatch(increase01())
             }}>
-                숫자올라
+                숫자 올리기
             </button>
+            
 
 
             <Table>
