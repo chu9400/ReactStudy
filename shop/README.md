@@ -197,7 +197,10 @@ slice 안에 reducers : { } 열고 거기 안에 함수 만들면 됩니다.
 - return 우측에 새로운 state 입력하면 그걸로 기존 state를 갈아치워줍니다. 
 
  
-이제 changeName() 쓸 때 마다 'kim' -> 'john kim' 이렇게 변할듯 
+이제 changeName() 쓸 때 마다 'kim' -> 'john kim' 이렇게 변할듯
+   
+
+
 
 
 
@@ -210,7 +213,11 @@ slice 안에 reducers : { } 열고 거기 안에 함수 만들면 됩니다.
 
 slice이름.actions 라고 적으면 state 변경함수가 전부 그 자리에 출력됩니다.
 
-그걸 변수에 저장했다가 export 하라는 뜻일 뿐임 
+그걸 변수에 저장했다가 export 하라는 뜻일 뿐임   
+   
+
+
+
 
 3. 원할 때 import 해서 사용합니다. 근데 dispatch() 로 감싸서 써야함 
 예를 들어서 Cart.js 에서 버튼같은거 하나 만들고
@@ -241,6 +248,9 @@ slice이름.actions 라고 적으면 state 변경함수가 전부 그 자리에 
 진짜인지 궁금하면 user라는 state 한 번 출력해보십시오.
 
 dispatch로 꼭 감싸야 실행됩니다.   
+   
+
+   
 ---
 
 
