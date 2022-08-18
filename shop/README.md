@@ -199,7 +199,8 @@ slice 안에 reducers : { } 열고 거기 안에 함수 만들면 됩니다.
  
 이제 changeName() 쓸 때 마다 'kim' -> 'john kim' 이렇게 변할듯
    
-
+   
+   
 
 
 
@@ -215,7 +216,8 @@ slice이름.actions 라고 적으면 state 변경함수가 전부 그 자리에 
 
 그걸 변수에 저장했다가 export 하라는 뜻일 뿐임   
    
-
+   
+   
 
 
 
@@ -249,8 +251,8 @@ slice이름.actions 라고 적으면 state 변경함수가 전부 그 자리에 
 
 dispatch로 꼭 감싸야 실행됩니다.   
    
-
    
+
 ---
 
 
