@@ -93,15 +93,15 @@ public / img / 파일을 빌더시 압축되지 않게 이미지 세팅
 ## react-router-dom 설치
 1. 터미널에서 npm install react-router-dom@6
 2. index.js에서 import { BrowserRouter } from 'react-router-dom';
-3. index.js하단에 <App /> 컴포넌트 감싸기   
+3. index.js하단에 "<App />" 컴포넌트 감싸기   
 
 <pre><code>
-
-    <React.StrictMode>
+    
+    "<React.StrictMode>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </React.StrictMode>
+    </React.StrictMode>"
 
 </code></pre> 
 4. App.js에서 import { Routes, Route, Link } from 'react-router-dom' 해주기   
