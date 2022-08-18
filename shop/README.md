@@ -176,7 +176,7 @@ package.json에서
 ## 리덕스 state 변경하는 법
 1. store.js 안에 state 수정해주는 함수부터 만듭니다. 
 
-</code></pre> 
+<code><pre> 
   let user = createSlice({
     name : 'user',
     initialState : 'kim',
